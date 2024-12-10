@@ -130,9 +130,7 @@ body {
   }
   .container {
     width: 80%;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 15px;
+    margin: 0 auto;
     padding: 35px;
     background-color: #071653;
     border-radius: 30px;
@@ -185,9 +183,8 @@ h2 {
 
 h3 {
     text-align: left;
-    margin-left: 121px;
-    margin-bottom: 20px;
-    margin-top: 50px;
+    margin-left: 8%;
+    margin-top: 5%;
     font-size: 40px ;
     font-family:'Angst';
     font-weight: lighter;
@@ -201,7 +198,7 @@ h3 {
     width: 80%;
     max-width: 500px;
     overflow: hidden;
-    margin: 0 auto;
+    margin: 5% auto;
     border-radius: 16px;
     box-shadow: 0 0 20px 7px #040c2e;
 }
@@ -242,9 +239,7 @@ h3 {
 
 .speakers-container {
     width: 80%;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 70px;
+    margin: 10% auto;
     padding: 35px;
     background-color: #071653;
     border-radius: 30px;
@@ -492,8 +487,7 @@ h3 {
       }
       .container {
         width: 80%;
-        margin-left: 6%;
-        margin-top: 15px;
+        margin: 0 auto;
         padding: 35px;
         background-color: #071653;
         border-radius: 30px;
