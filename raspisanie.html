@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расписание</title>
+  <link rel="stylesheet" type="text/css" href="raspisanie.css">
+  <style>
+    .strelca1 {text-align:right;}
+    .strelca2 {text-align:right;}
+  </style>
+</head>
+<body>
+    <header>
+      <nav id="start">
+        <div class="logo-box">
+          <h1 class="logo">
+            <a href="index.html">
+              <img src="logo.png">
+            </a>
+          </h1>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul id="nav-links">
+          <li><a href="index.html">О НАС</a></li>
+          <li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
+          <li><a href="mediaschool.html">МЕДИАШКОЛА</a></li>
+          <li><a href="#contact">КОНТАКТЫ</a></li>
+       </ul>
+      </nav>
+    </header>
+
+
+    <h1 >РАСПИСАНИЕ ЗАНЯТИЙ МЕДИАШКОЛЫ</h1>
+
+    <div class="raspisanie-container">
+      <table class="raspisanie-table">
+          <thead>
+              <tr>
+                  <th>Дата / Время</th>
+                  <th>Направление</th>
+                  <th>Спикер</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td><p>Понедельник</p> <p>13:00-14:00</p></td>
+                  <td>Дизайн</td>
+                  <td>Майя</td>
+              </tr>
+              <tr>
+                  <td><p>Вторник</p> <p>17:00-18:00</p></td>
+                  <td>Съемка видео</td>
+                  <td>Арина</td>
+              </tr>
+              <tr>
+                  <td><p>Среда</p> <p>15:00-16:00</p></td>
+                  <td>Копирайтинг</td>
+                  <td>Полина</td>
+              </tr>
+              <tr>
+                  <td><p>Четвег</p> <p>16:00-17:00</p></td>
+                  <td>Монтаж</td>
+                  <td>Арина</td>
+              </tr>
+              <tr>
+                  <td><p>Пятница</p> <p>18:00-19:00</p></td>
+                  <td>Фото</td>
+                  <td>Майя</td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
+  <script src="script.js"></script>
+    
+  <div class="contact-info" id="contact">
+    <div class="left-column">
+        <h4>Контактная информация</h4>
+        <p>Телефон: <a href="tel:+1234567890">+79099099900</a></p>
+        <p>Email: <a href="mailto:info@example.com">mediaschool@mail.ru</a></p>
+        <div class="social-links">
+          <div class="social-item">
+            <a href="https://vk.com/kipsovet" target="_blank">
+              <img src="вк1.png" alt="VK" class="social-icon" href="https://vk.com/kipsovet">
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://t.me/kipsst" target="_blank">
+              <img src="тг1.png" alt="TG" class="social-icon">
+            </a>
+          </div>
+      </div>
+  </div>
+    <div class="right-column">
+        <h4>Наша карта</h4>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4311f7ef36cd56f520aab790f57d65b176f5f03d041166bba0d1ca572c1a6bde&amp;source=constructor" width="500" height="400" frameborder="0"></iframe> 
+        <a href="#start"><img src="strelca1.png" class="strelca" ></a> 
+    </div>
+  </div>
+
+
+
+
+
+   
+</body>
+
+</html>

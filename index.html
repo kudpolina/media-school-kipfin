@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header>
+    <nav id="start">
+      <div class="logo-box">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="logo1.png">
+          </a>
+        </h1>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul id="nav-links">
+        <li><a href="#about">О НАС</a></li>
+        <li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
+        <li><a href="mediaschool.html">МЕДИАШКОЛА</a></li>
+        <li><a href="#contact">КОНТАКТЫ</a></li>
+     </ul>
+    </nav>
+  </header>
+
+  <script src="script.js"></script>
+
+
+
+    <div class="main">
+      <div class="wrapper">
+          <div class="main__text">
+              <h1>МЕДИАШКОЛА</h1>
+              <div class="main__container1">
+                  <p>КИПФИН </p>
+              </div>
+              <div class="mai">
+                <div class="wrapper">
+                  <div class="main__container2">
+    <p>Хочешь освоить медиапрофессии и<br>получить ценные навыки?</p>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+
+
+
+
+
+    <div class="main__info">
+    <div class="main__container3">
+      <button class="main__button" id="openModal">Регистрация</button>
+  <div><p>Зарегистрируйся в Медиашколе КИПФИН и<br>становись лучшим в медиа-пространстве</p></div>
+  </div>
+  </div>
+  
+  
+
+
+
+
+
+  <div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close" id="closeModal">&times;</span>
+        <div class="modal__container1">
+            <form>
+            <p>ФИО</p>
+            <input class="input1" required></input>
+
+            <p>Возраст</p>
+            <input class="input1" required></input>
+
+            
+                <p>Ссылка на страницу в ВК</p>
+                <input class="input1" required></input>
+
+            
+            <p>Опишите свои навыки в Медиа сфере</p>
+            <input class="input3" required></input>
+
+        </div>
+        <button class="modal__button">Отправить</button>
+      </form>
+    </div>
+</div>
+    
+    <footer>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+  <script>
+      // Получаем модальное окно
+      var modal = document.getElementById("myModal");
+
+      // Получаем кнопку, которая открывает модальное окно
+      var btn = document.getElementById("openModal");
+
+      // Получаем элемент <span>, который закрывает модальное окно
+      var span = document.getElementById("closeModal");
+
+      // Когда пользователь нажимает на кнопку, открывается модальное окно
+      btn.onclick = function() {
+          modal.style.display = "block";
+      }
+
+      // Когда пользователь нажимает на <span> (x), закрывается модальное окно
+      span.onclick = function() {
+          modal.style.display = "none";
+      }
+
+      // Когда пользователь нажимает в любом месте вне модального окна, оно закрывается
+      window.onclick = function(event) {
+          if (event.target == modal) {
+              modal.style.display = "none";
+          }
+      }
+  </script>
+
+
+ 
+
+<!-- Новый div, который добавляется в конец -->
+<div class="new-section">
+  <h2>ЧТО ТАКОЕ МЕДИАШКОЛА<br> КИПФИН?</h2>
+  <div class="background-image"></div>
+  <p>Медиашкола— это дополнительные занятия для<br> людей, интересующихся медиа направлением,<br> ориентированное на подготовку специалистов в<br>области средств массовой информации и<br> коммуникаций.</p>
+  <p>В нашей медиашколе студенты получают глубокие<br> знания в таких областях, как журналистика, PR,<br> реклама, цифровые медиа и видеопроизводство.</p>
+  <div class="flex-container1"></div>
+  <div class="flex-main">
+  <h3>На занятиях вы узнаете:</h3>
+  </div>
+  <div class="flex-container">
+    <div class="flex-item">Основы работы с текстом,<br> визуальным контентом и<br> медиа-технологиями. </div>
+    <div class="flex-item">Принципы работы с<br> приложениями для<br> видео и фото монтажа.</div>
+    <div class="flex-item">Как создавать<br> актуальный контент что<br> бы всегда оставаться в<br> топе.</div>
+</div>
+</div>
+</div>
+
+
+<div class="card-main">
+<h4 id="about">О НАС</h4>
+</div>
+<div class="card-container">
+  <div class="card">Учебный процесс основан на сочетании теоретических знаний и<br> практических навыков. Студенты изучают основы работы с текстом,<br> визуальным контентом и медиа-технологиями. Преподавательский<br> состав наших медиашкол состоит из опытных студентов в данном<br> направлении, которые развивают свой опыт и знания, вдохновляя<br> студентов на креативные решения и инновационные подходы в работе.</div>
+  <div class="card">Мы создаем атмосферу, способствующую развитию творческого мышления<br> и критического анализа, которая позволит нашим выпускникам успешно<br> конкурировать на рынке труда.</div>
+  <div class="card">Помимо этого процесса медиашкола активно участвует в различных<br> мероприятиях, таких как мастер-классы, конференции и фестивали, где<br> студенты могут продолжить свою работу и наладить полезные контакты с<br> профессионалами отрасли.</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<div class="contact-info" id="contact">
+  <div class="left-column">
+      <h4>Контактная информация</h4>
+      <p>Телефон: <a href="tel:+1234567890">+79099099900</a></p>
+      <p>Email: <a href="mailto:info@example.com">mediaschool@mail.ru</a></p>
+      <div class="social-links">
+        <div class="social-item">
+          <a href="https://vk.com/kipsovet" target="_blank">
+            <img src="вк.png" alt="VK" class="social-icon" href="https://vk.com/kipsovet">
+          </a>
+        </div>
+        <div class="social-item">
+          <a href="https://t.me/kipsst" target="_blank">
+            <img src="тг.png" alt="TG" class="social-icon">
+          </a>
+        </div>
+    </div>
+</div>
+  <div class="right-column">
+      <h4>Наша карта</h4>
+      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4311f7ef36cd56f520aab790f57d65b176f5f03d041166bba0d1ca572c1a6bde&amp;source=constructor" width="500" height="400" frameborder="0"></iframe> 
+      <a href="#start"><img src="strelca.png" class="strelca" ></a>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>

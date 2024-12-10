@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Медиашкола</title>
+  <link rel="stylesheet" type="text/css" href="mediaschool.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+<body>
+  <header>
+    <nav id="start">
+      <div class="logo-box">
+        <h1 class="logo">
+          <a href="index.html">
+            <img src="logo.png">
+          </a>
+        </h1>
+      </div>
+      <div class="menu-icon" onclick="toggleMenu()">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <ul id="nav-links">
+        <li><a href="index.html">О НАС</a></li>
+        <li><a href="raspisanie.html">РАСПИСАНИЕ</a></li>
+        <li><a href="mediaschool.html">МЕДИАШКОЛА</a></li>
+        <li><a href="#contact">КОНТАКТЫ</a></li>
+     </ul>
+    </nav>
+  </header>
+
+
+    <h1 >МЕДИАШКОЛА</h1>
+    <div class="container">
+        <h2>Записи занятий</h2>
+        <div class="videos">
+            <div class="video-item">
+                <iframe src="видео2.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-title">Ошибки при съемки видео</div>
+                <div class="mini-title">На этом уроке мы разберем самые распространенные ошибки, которые совершают новички при съемке видео.</div>
+            </div>
+            <div class="video-item">
+                <iframe src="видео1.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-title">Композиции в фотографии</div>
+                <div class="mini-title">Разберемся в правилах композиции и ее секретах.</div>
+            </div>
+            <div class="video-item">
+                <iframe src="видео3.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="video-title">Репортажная видеосъемка</div>
+                <div class="mini-title">Из чего должно состоять репортажное видео, чтобы он был интересным, динамичным и создавал для зрителя полную картину происходящего. </div>
+            </div>
+        </div>
+    </div>
+    <h3>Работы учеников</h3>
+
+    <div class="slider">
+        <div class="slides">
+            <img src="фото 4.jpg" alt="Image 1">
+            <img src="фото 5.jpg" alt="Image 2">
+            <img src="фото6.jpg" alt="Image 3">
+            <img src="фото7.jpg" alt="Image 3">
+        </div>
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+    </div>
+
+    <script src="script.js"></script>
+
+    <div class="speakers-container">
+        <h2>Спикеры</h2>
+      
+        <div class="speaker">
+          <img src="спикер1.jpg" alt="Спикер 1" class="speaker-photo">
+          <div class="speaker-name">Широкова Арина</div>
+          <div class="speaker-mini-text">Координатор Мультимедийного сектора
+            студенка группы 2ИСИП-456 Колледжа информатики и программирования </div>
+            <a class="speaker-button" href="https://t.me/miywee">Написать</a>
+        </div>
+      
+        <div class="speaker">
+          <img src="спикер2.jpg" alt="Спикер 2" class="speaker-photo">
+          <div class="speaker-name">Хабибулина Майя</div>
+          <div class="speaker-mini-text">Координатор по 
+            студенка группы 5ИСИП-777 Колледжа информатики и программирования </div>
+            <a class="speaker-button" href="https://t.me/maausha">Написать</a>
+        </div>
+      
+        <div class="speaker">
+          <img src="спикер3.jpg" alt="Спикер 3" class="speaker-photo">
+          <div class="speaker-name">Кудрявцева Полина</div>
+          <div class="speaker-mini-text">Координатор по 
+            студенка группы 5ИСИП-777 Колледжа информатики и программирования </div>
+          <a class="speaker-button" href="https://t.me/kudpolly">Написать</a>
+        </div>
+      </div>
+
+</body>
+
+<div class="contact-info" id="contact">
+    <div class="left-column">
+        <h4>Контактная информация</h4>
+        <p>Телефон: <a href="tel:+1234567890">+79099099900</a></p>
+        <p>Email: <a href="mailto:info@example.com">mediaschool@mail.ru</a></p>
+        <div class="social-links">
+          <div class="social-item">
+            <a href="https://vk.com/kipsovet" target="_blank">
+              <img src="вк1.png" alt="VK" class="social-icon" href="https://vk.com/kipsovet">
+            </a>
+          </div>
+          <div class="social-item">
+            <a href="https://t.me/kipsst" target="_blank">
+              <img src="тг1.png" alt="TG" class="social-icon">
+            </a>
+          </div>
+      </div>
+  </div>
+    <div class="right-column">
+        <h4>Наша карта</h4>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A4311f7ef36cd56f520aab790f57d65b176f5f03d041166bba0d1ca572c1a6bde&amp;source=constructor" width="500" height="400" frameborder="0"></iframe>  
+        <a href="#start"><img src="strelca1.png" class="strelca" ></a>
+    </div>
+  </div>
+
+</html>

@@ -1,0 +1,1153 @@
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('ofont.ru_Montserrat (2).ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+  background-color: #E0E1E8;
+  justify-content: center;
+  align-items: center;
+  background-image: url('фото1.png'); /* Путь к фоновому изображению */
+  background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  
+}
+
+.wrapper { 
+  width: 100%; 
+  margin: 0 auto 0 auto; 
+} 
+
+a { 
+  text-decoration: none;  
+}
+
+
+.menu-icon {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  margin-right: 25px;
+}
+
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: #fff;
+  margin: 4px 0;
+  transition: 0.4s;
+}
+
+nav {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 20px 0;
+  overflow: hidden;
+}
+.logo-box {
+  float: left;
+  margin-left: 25px;
+}
+.logo {
+  margin: 0px;
+  height: 70px;
+  text-align: left;
+}
+#nav-links{
+  margin: 0;
+  margin-right: 25px;
+  padding-left: 0;
+  list-style: none;
+  float: center;
+  height: 70px;
+  line-height: 70px;
+  text-align:center;
+  font-family: 'Angst', bold;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+}
+li a {
+  color: #fff;
+  text-transform: uppercase;
+}
+li {
+  display: inline-block;
+  margin-right: 117px;
+  transition: .5s linear;
+}
+li a:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  background: #fff;
+  transition: all 0.5s linear;  
+}
+li a:hover:after{
+  width: 100%;
+}
+@media screen and (max-width:493px) {
+  nav {
+    overflow: visible
+  }
+
+  .menu-icon {
+    display: flex;
+    float: right;
+    margin-top: -10vw;
+  }
+
+  #nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    height: auto;
+    margin: 25px 25px 0 25px;
+    line-height: 50px;
+  }
+
+  #nav-links.active {
+    display: flex;
+  }
+
+  li {
+    margin: 10px 0;
+  }
+  li:hover {
+    background: rgba(0,0,0,.1)
+  }
+  li a:after {
+    content: none;
+  }
+  }
+
+
+
+.main {
+  padding: 0 20px 0 20px;
+
+}
+.main__text h1 {
+  font-size: 203px;
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Angst', bold;
+}
+.main__container1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  font-size: 50px;
+  font-weight: 500;
+  margin-left: 20px;
+  margin-top: -40px;
+  align-items: center;
+}
+
+.main__info p {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+  font-size: 20px;
+  margin-top: 80px;
+}
+
+.main__container2 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 26px;
+  font-weight: 500;
+  margin: 0 0 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+.main__container3 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 10px;
+  gap: 30px;
+}
+.main__button {
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: 80px;
+  width: 220px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 20px;
+  border-color: #F5769C;
+  background-color: #F5769C;
+  border: none;
+  cursor: pointer;
+}
+
+.main__button {
+  background-color: #F5769C; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  border: 4px solid #9370F2; /* Основная рамка */
+  border-radius: 40px; /* Закругление углов */
+  padding: 10px 20px; /* Отступы внутри кнопки */
+  font-size: 16px; /* Размер шрифта */
+  cursor: pointer; /* Курсор при наведении */
+  position: relative; /* Для позиционирования псевдоэлемента */
+  transition: all 0.3s ease; /* Плавный переход */
+}
+
+.main__button::before {
+  content: ""; /* Псевдоэлемент для второй рамки */
+  position: absolute; /* Абсолютное позиционирование */
+  top: -10px; /* Сдвиг вверх */
+  left: -10px; /* Сдвиг влево */
+  right: -10px; /* Сдвиг вправо */
+  bottom: -10px; /* Сдвиг вниз */
+  border: 20px solid #ffffff; /* Вторая рамка */
+  border-radius: 40px; /* Закругление углов второй рамки */
+  z-index: -1; /* Помещаем за кнопку */
+}
+
+.main__button {
+  background-color: #D45A7A; /* Цвет фона при наведении */
+}
+
+.modal {
+  display: none; /* Скрыть форму по умолчанию */
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 120%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #2D3076, #2D3076);
+  margin: 5% auto; /* 15% сверху и центрирование */
+  padding: 20px;
+  border: 1px solid #2D3076;
+  width: 30%; /* Ширина */
+  height: 70%;
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+}
+
+.modal-content2 {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(to bottom, #2D3076, #2D3076);
+  margin: 5% auto; /* 15% сверху и центрирование */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%; /* Ширина */
+  height: 70%;
+  border-radius: 0px;
+  border: none;
+  text-align: center;
+}
+
+input, textarea {
+  color: rgb(255, 255, 255);
+}
+
+.close {
+  color: #ffffff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: #071757;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__container1 {
+  color: white;
+  font-weight: 600;
+  text-align: left;
+  font-size: 1.2vw;
+}
+.input1 {
+  background-color: #2D3076; 
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+}
+.modal__container2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px 0;
+}
+.input2 {
+  background-color: #2D3076; 
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 40px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 60px;
+}
+.input3 {
+  background-color: #2D3076; 
+  border: 1px solid #ffffff;
+  width: 100%;
+  height: 140px;
+  border-radius: 6px;
+  font-family: 'Montserrat', sans-serif;
+}
+.input5 {
+  width: 85%;
+  height: 50px;
+  border-radius: 6px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+}
+.modal__button {
+  margin: 20px 0;
+  color: white;
+  font-weight: 600;
+  background-color: #BE7C96;
+  height: 40px;
+  width: 180px;
+  font-size: 20px;
+  border-radius: 7px;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
+
+.main {
+  display: flex; /* Используем Flexbox для расположения элементов */
+  align-items: center; /* Центрируем элементы по вертикали */
+}
+
+.main__text {
+  flex: 1; /* Занимает оставшееся пространство */
+}
+
+.main__info {
+  flex: 1; /* Занимает оставшееся пространство */
+  position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+}
+
+.right-image {
+  width: 200px; /* Установите желаемую ширину изображения */
+  height: auto; /* Автоматическая высота для сохранения пропорций */
+  margin-left: 20px; /* Отступ слева для отделения от текста */
+  align-self: flex-start; /* Выравнивание изображения по верхнему краю */
+}
+
+
+
+
+
+
+
+.new-section {
+  background-color: #071651; /* Цвет фона для карточки */
+  border-radius: 33px; /* Закругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта поднятия */
+  padding: 20px; /* Внутренние отступы */
+  margin: 100PX auto; /* Внешние отступы сверху и снизу, центрирование */
+  width: 75%; /* Устанавливаем фиксированную ширину карточки */
+  display: flex; /* Включаем Flexbox */
+  flex-direction: column; /* Устанавливаем направление колонок для вертикального расположения */
+  align-items: flex-start; /* Выравниваем элементы по левому краю */
+}
+
+.new-section h2 {
+  font-family: 'Angst', sans-serif;
+  font-size: 50px; /* Размер шрифта заголовка */
+  color: #ffffff; /* Цвет текста заголовка */
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+.background-image {
+  background-image: url('img2.png'); /* Укажите путь к вашему изображению */
+  background-size: cover; /* Масштабируем изображение, чтобы оно заполнило контейнер */
+  background-position: center; /* Центрируем изображение */
+  height: 100px; /* Высота контейнера с изображением */
+  width: 15%; /* Ширина контейнера */
+  margin: 0px 30px 0 220px; /* Увеличиваем отступ сверху до 50px */
+}
+
+.new-section p {
+  font-size: 23px; /* Размер шрифта для параграфа */
+  color: #ffffff; /* Цвет текста параграфа */
+  text-align: left; /* Выравнивание текста по левому краю */
+  margin: 0; /* Убираем отступы по умолчанию */
+  margin-left: 550px; /* Сдвигаем параграфы вправо */
+  margin-top: -130px; /* Устанавливаем небольшой отступ сверху */
+}
+
+.new-section p + p {
+  margin-top: 30px; /* Добавляем отступ сверху для второго параграфа */
+}
+
+
+
+.flex-container1 {
+  font-family: Arial, sans-serif; /* Шрифт для всего сайта */
+  margin: -8%; /* Убираем отступы по умолчанию */
+  padding: 20px; /* Отступы для всего тела */
+}
+
+.flex-main h3{
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ccc;
+  margin-top: 200px;
+  margin-left: 50px;
+}
+
+
+.flex-container {
+  display: flex; /* Включаем Flexbox */
+  justify-content: space-between; /* Распределяем элементы с равными промежутками */
+  align-items: stretch; /* Выравниваем элементы по высоте */
+  background-color: #071651; /* Цвет фона контейнера */
+  padding: 20px; /* Отступы внутри контейнера */
+  border: 13px solid #071651; /* Рамка вокруг контейнера */
+}
+
+.flex-item {
+  font-size: 18px;
+  background-color: #4C288E; /* Цвет фона элементов */
+  color: white; /* Цвет текста */
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  padding: 25px; /* Отступы внутри элементов */
+  border-radius: 13px; /* Закругление углов */
+  flex: 1; /* Элементы занимают равное пространство */
+  margin: 20px; /* Отступы между элементами */
+  text-align: left;
+  min-width: 290px; /* Минимальная ширина карточки */
+  min-height: 120px;
+  box-sizing: border-box; /* Учитываем отступы и границы в ширине и высоте */
+}
+
+
+
+
+
+
+.card-main h4{
+  font-size: 60px;
+  font-family: 'Angst', sans-serif;
+  color: #ccc;
+  margin-top: -120px;
+  padding: 90px;
+  margin-left: 3%;
+}
+
+
+
+.card-container {
+  display: flex; /* Включаем Flexbox */
+  flex-direction: column; /* Устанавливаем направление колонок */
+  margin: 0 auto;
+  gap: 10px; /* Устанавливаем расстояние между карточками */
+  padding: 20px; /* Отступы вокруг контейнера */
+  width: 75%;
+}
+
+.card {
+  font-size: 25px;
+  font-family: 'Montserrat';
+  font-weight: lighter;
+  background-color: #071651; /* Цвет фона карточки */
+  color: white; /* Цвет текста */
+  padding: 30px 50px 30px 50px; /* Отступы внутри карточки */
+  border-radius: 33px; /* Закругление углов */
+  width: 1086px; /* Ширина карточки */
+  text-align: left; /* Выравнивание текста по левому краю */
+  margin-top: -20px; /* Убираем верхний отступ */
+  margin-bottom: 50px; /* Устанавливаем отступ снизу для расстояния между карточками */
+  margin: 0 auto;
+}
+
+
+
+
+
+
+.contact-info {
+  display: flex; /* Используем Flexbox для расположения колонок */
+  background-color: white; /* Белый фон */
+  padding: 20px; /* Отступы вокруг контейнера */
+  width: 95%; /* Занимаем 95% ширины */
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  background-image: url('background.jpg'); /* Путь к фоновому изображению */
+  background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+}
+
+.left-column h4 {
+  font-family: 'Angst', sans-serif;
+  font-size: 35px;
+  margin-top: 20px; /* Убираем верхний отступ заголовка */
+  margin-left: 70px;
+  margin-bottom: 10px; /* Добавляем отступ снизу заголовка */
+  color: #071651;
+}
+
+.left-column p {
+  font-size: 23px;
+  font-weight: bold;
+  margin-top: 5px; /* Добавляем небольшой отступ сверху для текста */
+  margin-left: 70px;
+  margin-bottom: 20px; /* Добавляем небольшой отступ снизу для текста */
+  color: #071651;
+}
+
+.left-column a{
+  color: #071651;
+  font-weight: lighter;
+}
+
+.right-column {
+  flex: 1; /* Занимает 1 часть доступного пространства */
+}
+
+.social-links {
+  margin-top: 10px; /* Отступ сверху для блока с соцсетями */
+  margin-left: 53px;
+  display: flex;
+  justify-content: row;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex; /* Используем Flexbox для иконки и ссылки */
+  align-items: center; /* Центрируем по вертикали */
+  margin-left:10px ;
+}
+
+.social-icon {
+  width: 80px; /* Ширина иконки соцсети */
+  height: auto; /* Автоматическая высота */
+  margin-right: 13px; /* Отступ справа от иконки */
+}
+
+
+.right-column {
+  flex: 1; /* Занимает 1 часть доступного пространства */
+  margin-left: 230px; /* Сдвигаем колонку вправо на 20 пикселей */
+}
+
+
+.right-column iframe {
+  width: 90%; /* Занимаем всю ширину правой колонки */
+  height: 250px; /* Высота карты */
+}
+
+.right-column h4{
+  color: #071757;
+  font-size: 25px;
+}
+
+.strelca {
+  margin-left: 4.5px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }
+  @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }
+
+  @media screen and (max-width: 1025px){
+
+    body {
+      margin: 0;
+      background-color: #E0E1E8;
+      justify-content: center;
+      align-items: center;
+      background-image: url('bg1.png'); /* Путь к фоновому изображению */
+      background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+      background-position: center; /* Центрирует изображение */
+      background-repeat: no-repeat; /* Не повторяет изображение */
+      
+    }
+    .wrapper { 
+      width: 100%; 
+      margin: 0 auto 0 auto; 
+    } 
+    
+    a { 
+      text-decoration: none;  
+    }
+    
+    
+      nav {
+        font-family: 'Angst', bold;
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 20px 0;
+        overflow: hidden;
+      }
+      .logo-box {
+        float: left;
+        margin-left: 25px;
+      }
+      .logo {
+        margin: 0px;
+        height: 70px;
+        text-align: left;
+      }
+      ul {
+        margin: 0;
+        margin-right: 25px;
+        padding-left: 0;
+        list-style: none;
+        float: center;
+        height: 70px;
+        line-height: 70px;
+        text-align:center;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+      }
+      li a {
+        color: #ffffff;
+        text-transform: uppercase;
+      }
+      li {
+        display: inline-block;
+        margin-right: 117px;
+        transition: .5s linear;
+      }
+      li a:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        background: #ffffff;
+        transition: all 0.5s linear;  
+      }
+      li a:hover:after{
+        width: 100%;
+      }
+      @media screen and (max-width:574px) {
+        .logo-box {
+          float: none;
+          margin: 0 auto;
+        }
+        ul {
+          float: none;
+          margin: 0 25px;
+          }
+       li:first-of-type {margin-left:0}
+      }
+      
+      @media screen and (max-width:493px) {
+      nav {
+        overflow: visible
+      }
+      ul {
+        height: auto;
+        margin: 25px 25px 0 25px;
+        line-height: 50px;
+      }
+      li {
+        display: block;
+        margin: 0;
+      }
+      li:hover {
+        background: rgba(0,0,0,.1)
+      }
+      li a:after {
+        content: none;
+      }
+      }
+    
+    
+    
+    .main {
+      padding: 0 20px 0 20px;
+    
+    }
+    .main__text h1 {
+      font-size: 13vw;
+      color: #ffffff;
+      text-align: center;
+      font-family: 'Angst', bold;
+      margin-top: 10vw;
+    }
+    .main__container1 {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      color: #ffffff;
+      font-size: 7vw;
+      font-weight: 500;
+      margin-left: 0vw;
+      margin-top: -2vw;
+      align-items: center;
+    }
+    
+    .main__info p {
+      font-family: 'Montserrat', sans-serif;
+      color: white;
+      font-size: 3.5vw;
+      margin-top: 80px;
+      margin-left: -1vw;
+    }
+    
+    .main__container2 {
+      font-family: 'Montserrat', sans-serif;
+      color: #ffffff;
+      font-size: 5vw;
+      font-weight: 500;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: 20px;
+      margin-left: 2vw;
+    }
+    
+    
+    
+    .main__container3 {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      margin-top: -10vw;
+    }
+
+    .main__container3 p{
+      display: flex;
+      font-size: 3.5vw;
+      width: 15vw;
+    }
+
+    .main__button {
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 600;
+      margin-left: 8vw;
+      margin-top: 5vw;
+      width: 30vw;
+      height: 10vw;
+      border-radius: 20px;
+      border-color: #F5769C;
+      background-color: #F5769C;
+      border: none;
+      cursor: pointer;
+    }
+    
+    .main__button {
+      background-color: #F5769C; /* Цвет фона кнопки */
+      color: white; /* Цвет текста */
+      border: 3px solid #9370F2; /* Основная рамка */
+      border-radius: 40px; /* Закругление углов */
+      padding: 10px 20px 10px 20px; /* Отступы внутри кнопки */
+      font-size: 3vw; /* Размер шрифта */
+      cursor: pointer; /* Курсор при наведении */
+      position: relative; /* Для позиционирования псевдоэлемента */
+      transition: all 0.3s ease; /* Плавный переход */
+    }
+    
+    .main__button::before {
+      content: ""; /* Псевдоэлемент для второй рамки */
+      position: absolute; /* Абсолютное позиционирование */
+      top: -5px; /* Сдвиг вверх */
+      left: -5px; /* Сдвиг влево */
+      right: -5px; /* Сдвиг вправо */
+      bottom: -5px; /* Сдвиг вниз */
+      border: 1vw solid #ffffff; /* Вторая рамка */
+      border-radius: 40px; /* Закругление углов второй рамки */
+      z-index: -1; /* Помещаем за кнопку */
+    }
+    
+    .main__button {
+      background-color: #D45A7A; /* Цвет фона при наведении */
+    }
+    
+    .modal {
+      display: none; /* Скрыть форму по умолчанию */
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный фон */
+      justify-content: center;
+      align-items: center;
+    }
+    .modal-content {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to bottom, #2D3076, #2D3076);
+      margin: 15% auto; /* 15% сверху и центрирование */
+      padding: 20px;
+      border: 1px solid #2D3076;
+      width: 60%; /* Ширина */
+      height: 50%;
+      border-radius: 0px;
+      border: none;
+      text-align: center;
+    }
+    
+
+    
+    input, textarea {
+      color: rgb(255, 255, 255);
+    }
+    
+    .close {
+      color: #ffffff;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+    }
+    .close:hover,
+    .close:focus {
+      color: #071757;
+      text-decoration: none;
+      cursor: pointer;
+    }
+    
+    .modal__container1 {
+      color: white;
+      font-weight: 600;
+      text-align: left;
+      font-size: 3vw;
+    }
+    .input1 {
+      background-color: #2D3076; 
+      border: 1px solid #ffffff;
+      width: 100%;
+      height: 40px;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 30px;
+    }
+    .modal__container2 {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 10px 0;
+    }
+    .input2 {
+      background-color: #2D3076; 
+      border: 1px solid #ffffff;
+      width: 100%;
+      height: 40px;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+      margin-bottom: 60px;
+    }
+    .input3 {
+      background-color: #2D3076; 
+      border: 1px solid #ffffff;
+      width: 100%;
+      height: 140px;
+      border-radius: 6px;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .input5 {
+      width: 85%;
+      height: 50px;
+      border-radius: 6px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .modal__button {
+      margin: 20px 0;
+      color: white;
+      font-weight: 600;
+      background-color: #BE7C96;
+      height: 8vw;
+      width: 30vw;
+      font-size: 3vw;
+      border-radius: 7px;
+      border: none;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+    }
+    
+    
+    .main {
+      display: flex; /* Используем Flexbox для расположения элементов */
+      align-items: center; /* Центрируем элементы по вертикали */
+    }
+    
+    .main__text {
+      flex: 1; /* Занимает оставшееся пространство */
+    }
+    
+    .main__info {
+      flex: 1; /* Занимает оставшееся пространство */
+      position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    }
+    
+    .right-image {
+      width: 200px; /* Установите желаемую ширину изображения */
+      height: auto; /* Автоматическая высота для сохранения пропорций */
+      margin-left: 20px; /* Отступ слева для отделения от текста */
+      align-self: flex-start; /* Выравнивание изображения по верхнему краю */
+    }
+    
+    
+    .new-section {
+      background-color: #071651; /* Цвет фона для карточки */
+      border-radius: 33px; /* Закругленные углы */
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень для создания эффекта поднятия */
+      margin-left: 7vw;
+      width: 80%; /* Устанавливаем фиксированную ширину карточки */
+      display: flex; /* Включаем Flexbox */
+      flex-direction: column; /* Устанавливаем направление колонок для вертикального расположения */
+      align-items: flex-start; /* Выравниваем элементы по левому краю */
+    }
+    
+    .new-section h2 {
+      font-family: 'Angst', sans-serif;
+      font-size: 7vw; /* Размер шрифта заголовка */
+      color: #ffffff; /* Цвет текста заголовка */
+      margin-left: 80px;
+      margin-top: 10px;
+    }
+    
+    .background-image {
+      background-image: url('img2.png'); /* Укажите путь к вашему изображению */
+      background-size: cover; /* Масштабируем изображение, чтобы оно заполнило контейнер */
+      background-position: center; /* Центрируем изображение */
+      height: 100px; /* Высота контейнера с изображением */
+      width: 15%; /* Ширина контейнера */
+      margin-left: 2vw;
+    }
+    
+    .new-section p {
+      font-size: 5vw; /* Размер шрифта для параграфа */
+      color: #ffffff; /* Цвет текста параграфа */
+      text-align: left; /* Выравнивание текста по левому краю */
+      margin-left: 20vw; /* Сдвигаем параграфы вправо */
+      margin-top: -15vw; /* Устанавливаем небольшой отступ сверху */
+    }
+    
+    .new-section p + p {
+      margin-top: 30px; /* Добавляем отступ сверху для второго параграфа */
+    }
+    
+    
+    
+    .flex-container1 {
+      font-family: Arial, sans-serif; /* Шрифт для всего сайта */
+      margin: -8%; /* Убираем отступы по умолчанию */
+      padding: 10px; /* Отступы для всего тела */
+    }
+    
+    .flex-main h3{
+      font-size: 6vw;
+      font-family: 'Montserrat', sans-serif;
+      color: #ccc;
+      margin-top: 20vw;
+      margin-left: 0vw;
+    }
+    
+    
+    .flex-container {
+      display: flex; /* Включаем Flexbox */
+      justify-content: space-between; /* Распределяем элементы с равными промежутками */
+      align-items: stretch; /* Выравниваем элементы по высоте */
+      flex-direction: column;
+      background-color: #071651; /* Цвет фона контейнера */
+      padding: 0px; /* Отступы внутри контейнера */
+      border: 13px solid #071651; /* Рамка вокруг контейнера */
+    }
+    
+    .flex-item {
+      font-size: 4vw;
+      background-color: #4C288E; /* Цвет фона элементов */
+      color: white; /* Цвет текста */
+      font-family: 'Montserrat';
+      font-weight: lighter;
+      padding: 15px; /* Отступы внутри элементов */
+      border-radius: 13px; /* Закругление углов */
+      flex: 1; /* Элементы занимают равное пространство */
+      margin: 20px; /* Отступы между элементами */
+      text-align: left;
+      min-width: 90px; /* Минимальная ширина карточки */
+      min-height: 20px;
+      box-sizing: border-box; /* Учитываем отступы и границы в ширине и высоте */
+    }
+    
+    
+    
+    
+    
+    
+    .card-main h4{
+      font-size: 10vw;
+      font-family: 'Angst', sans-serif;
+      color: #fff;
+      margin-top: -120px;
+      padding: 90px;
+      margin-left: 11%;
+      margin-bottom: -20vw;
+    }
+    
+    
+    
+    .card-container {
+      display: flex; /* Включаем Flexbox */
+      flex-direction: column; /* Устанавливаем направление колонок */
+      align-items: center; /* Центрируем карточки по горизонтали */
+      gap: 10px; /* Устанавливаем расстояние между карточками */
+      padding: 4px; /* Отступы вокруг контейнера */
+      margin-left: 7vw;
+    }
+    
+    .card {
+      font-size: 3.9vw;
+      font-family: 'Montserrat';
+      font-weight: lighter;
+      background-color: #071651; /* Цвет фона карточки */
+      color: white; /* Цвет текста */
+      padding: 30px 50px 30px 50px; /* Отступы внутри карточки */
+      border-radius: 33px; /* Закругление углов */
+      width: 80%; /* Ширина карточки */
+      text-align: left; /* Выравнивание текста по левому краю */
+      margin-top: 1vw; /* Убираем верхний отступ */
+      margin-bottom: 10px; /* Устанавливаем отступ снизу для расстояния между карточками */
+    }
+    
+    
+    
+    
+    
+    
+    .contact-info {
+      display: flex; /* Используем Flexbox для расположения колонок */
+      background-color: white; /* Белый фон */
+      padding: 20px; /* Отступы вокруг контейнера */
+      width: 95%; /* Занимаем 95% ширины */
+      margin: 0 auto; /* Центрируем контейнер по горизонтали */
+      background-image: url('background.jpg'); /* Путь к фоновому изображению */
+      background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+      background-position: center; /* Центрирует изображение */
+      background-repeat: no-repeat; /* Не повторяет изображение */
+    }
+    
+    .left-column h4 {
+      font-family: 'Angst', sans-serif;
+      color: #071651;
+      font-size: 4vw;
+      margin-top: 1vw; /* Убираем верхний отступ заголовка */
+      margin-left: 1vw;
+      margin-bottom: 10px; /* Добавляем отступ снизу заголовка */
+    }
+    
+    .left-column p {
+      color: #071651;
+      font-size: 3.5vw;
+      text-align: left;
+      font-weight: bold;
+      margin-top: 5px; /* Добавляем небольшой отступ сверху для текста */
+      margin-left: 6px;
+      margin-bottom: 20px; /* Добавляем небольшой отступ снизу для текста */
+    }
+    
+    .left-column a{
+      color: #071651;
+      font-weight: lighter;
+    }
+    
+    .right-column {
+      flex: 1; /* Занимает 1 часть доступного пространства */
+    }
+    
+    .social-links {
+      margin-top: 10px; /* Отступ сверху для блока с соцсетями */
+      margin-left: -5px;
+      display: flex;
+      justify-content: row;
+      flex-wrap: wrap;
+    }
+    
+    .social-item {
+      display: flex; /* Используем Flexbox для иконки и ссылки */
+      align-items: center; /* Центрируем по вертикали */
+      margin-left:10px ;
+    }
+    
+    .social-icon {
+      width: 7vw; /* Ширина иконки соцсети */
+      height: auto; /* Автоматическая высота */
+      margin-right: 13px; /* Отступ справа от иконки */
+    }
+    
+    
+    .right-column {
+      flex: 1; /* Занимает 1 часть доступного пространства */
+      margin-left: 7vw; /* Сдвигаем колонку вправо на 20 пикселей */
+    }
+    
+    
+    .right-column iframe {
+      width: 100%; /* Занимаем всю ширину правой колонки */
+      height: 50%; /* Высота карты */
+    }
+    
+    .right-column h4{
+      color: #071651;
+      font-size: 4vw;
+    }
+    
+    .strelca {
+      margin-left: 24vw;
+      margin-top: 2vw;
+      width: 23%;
+      height: 23%;
+    }
+
+  }

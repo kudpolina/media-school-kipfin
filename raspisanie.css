@@ -1,0 +1,409 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+  margin: 0;
+  background-color: #E0E1E8;
+  justify-content: center;
+  align-items: center;
+  background-image: url('background.jpg'); /* Путь к фоновому изображению */
+  background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #071757;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .logo-box {
+    float: left;
+    margin-left: 25px;
+  }
+  .logo {
+    margin: 0px;
+    height: 70px;
+    text-align: left;
+  }
+  #nav-links{
+    margin: 0;
+    margin-right: 25px;
+    padding-left: 0;
+    list-style: none;
+    float: center;
+    height: 70px;
+    line-height: 70px;
+    text-align:center;
+    font-family: 'Angst', bold;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  li a {
+    color: #071757;
+    text-transform: uppercase;
+  }
+  li {
+    display: inline-block;
+    margin-right: 117px;
+    transition: .5s linear;
+  }
+  li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background: #071757;
+    transition: all 0.5s linear;  
+  }
+  li a:hover:after{
+    width: 100%;
+  }
+  @media screen and (max-width:493px) {
+    nav {
+      overflow: visible
+    }
+
+    .menu-icon {
+      display: flex;
+      float: right;
+      margin-top: 25px;
+    }
+
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      height: auto;
+      margin: 25px 25px 0 25px;
+      line-height: 50px;
+    }
+
+    #nav-links.active {
+      display: flex;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+    li:hover {
+      background: rgba(0,0,0,.1)
+    }
+    li a:after {
+      content: none;
+    }
+    }
+
+  h1 {
+    text-align: center;
+    margin-top: 25px;
+    font-family:'Angst', bold;
+    font-size: 4.3vw;
+    color: #071757;
+  }
+
+  .raspisanie-container {
+    width: 80%;
+    background: #858DAF; 
+    padding: 20px 0 0 0;
+    border-radius: 30px;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.raspisanie-table {
+    width: 100%;
+    border-collapse: collapse;
+    overflow: hidden;
+    background-color: #071757;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+p{
+  margin-top: 5px;
+  text-align: center;
+}
+.raspisanie-table thead th {
+    background-color: #071757;
+    color: #ffffff;
+    font-size: 35px;
+    padding: 10px 10px;
+    text-transform: uppercase;
+    font-family: 'Angst';
+    font-weight: 100;
+}
+.raspisanie-table tbody td {
+    color: #ffffff;
+    font-size: 25px;
+    text-align: center;
+    padding: 40px 10px; 
+    width: 15%;
+    font-weight: 50;
+    font-family: 'Angst';
+    
+}
+
+
+.raspisanie-table thead th, .raspisanie-table tbody td {
+    border: 2px solid #E0DFD9;
+}
+
+
+.contact-info {
+  display: flex; /* Используем Flexbox для расположения колонок */
+  background-color: white; /* Белый фон */
+  padding: 20px; /* Отступы вокруг контейнера */
+  width: 95%; /* Занимаем 95% ширины */
+  margin: 0 auto; /* Центрируем контейнер по горизонтали */
+  background-image: url('contact.png'); /* Путь к фоновому изображению */
+  background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+  background-position: center; /* Центрирует изображение */
+  background-repeat: no-repeat; /* Не повторяет изображение */
+}
+
+.left-column h4 {
+  font-family: 'Angst', sans-serif;
+  color: #fff;
+  font-size: 35px;
+  margin-top: 20px; /* Убираем верхний отступ заголовка */
+  margin-left: 20px;
+  margin-bottom: 10px; /* Добавляем отступ снизу заголовка */
+}
+
+.left-column p {
+  color: #fff;
+  font-size: 23px;
+  text-align: left;
+  font-weight: bold;
+  margin-top: 5px; /* Добавляем небольшой отступ сверху для текста */
+  margin-left: 20px;
+  margin-bottom: 20px; /* Добавляем небольшой отступ снизу для текста */
+}
+
+.left-column a{
+  color: #fff;
+  font-weight: lighter;
+}
+
+.right-column {
+  flex: 1; /* Занимает 1 часть доступного пространства */
+}
+
+.social-links {
+  margin-top: 10px; /* Отступ сверху для блока с соцсетями */
+  margin-left: 10px;
+  display: flex;
+  justify-content: row;
+  flex-wrap: wrap;
+}
+
+.social-item {
+  display: flex; /* Используем Flexbox для иконки и ссылки */
+  align-items: center; /* Центрируем по вертикали */
+  margin-left:10px ;
+}
+
+.social-icon {
+  width: 80px; /* Ширина иконки соцсети */
+  height: auto; /* Автоматическая высота */
+  margin-right: 13px; /* Отступ справа от иконки */
+}
+
+
+.right-column {
+  flex: 1; /* Занимает 1 часть доступного пространства */
+  margin-left: 400px; /* Сдвигаем колонку вправо на 20 пикселей */
+}
+
+
+.right-column iframe {
+  width: 90%; /* Занимаем всю ширину правой колонки */
+  height: 250px; /* Высота карты */
+}
+
+.right-column h4{
+  color: #fff;
+  font-size: 25px;
+}
+
+.strelca {
+  margin-left: 4.5px;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }
+  @keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+  }
+  @media screen and (max-width: 1025px){
+    h1 {
+      text-align: center;
+      margin-top: 20vw;
+      font-family:'Angst', bold;
+      font-size: 8vw;
+      color: #071757;
+    }
+  
+    .raspisanie-container {
+      width: 80%;
+      background: #858DAF; 
+      padding: 20px 0 0 0;
+      border-radius: 30px;
+      text-align: center;
+      margin: 30px auto;
+  }
+  
+  .raspisanie-table {
+      width: 80%;
+      border-collapse: collapse;
+      overflow: hidden;
+      background-color: #071757;
+      border-bottom-left-radius: 30px;
+      border-bottom-right-radius: 30px;
+  }
+  
+  p{
+    margin-top: 5px;
+    text-align: center;
+  }
+  .raspisanie-table thead th {
+      background-color: #071757;
+      color: #ffffff;
+      font-size: 4vw;
+      padding: 10px 10px;
+      text-transform: uppercase;
+      font-family: 'Angst';
+      font-weight: 100;
+  }
+  .raspisanie-table tbody td {
+      color: #ffffff;
+      font-size: 3vw;
+      text-align: center;
+      padding: 40px 10px; 
+      width: 15%;
+      font-weight: 50;
+      font-family: 'Angst';
+      
+  }
+  
+  
+  .raspisanie-table thead th, .raspisanie-table tbody td {
+      border: 2px solid #E0DFD9;
+  }
+  
+  
+  .contact-info {
+    display: flex; /* Используем Flexbox для расположения колонок */
+    background-color: white; /* Белый фон */
+    padding: 20px; /* Отступы вокруг контейнера */
+    width: 95%; /* Занимаем 95% ширины */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    background-image: url('contact.png'); /* Путь к фоновому изображению */
+    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+  }
+  
+  .left-column h4 {
+    font-family: 'Angst', sans-serif;
+    color: #fff;
+    font-size: 4vw;
+    margin-top: 1vw; /* Убираем верхний отступ заголовка */
+    margin-left: 1vw;
+    margin-bottom: 10px; /* Добавляем отступ снизу заголовка */
+  }
+  
+  .left-column p {
+    color: #fff;
+    font-size: 3.5vw;
+    text-align: left;
+    font-weight: bold;
+    margin-top: 5px; /* Добавляем небольшой отступ сверху для текста */
+    margin-left: 6px;
+    margin-bottom: 20px; /* Добавляем небольшой отступ снизу для текста */
+  }
+  
+  .left-column a{
+    color: #fff;
+    font-weight: lighter;
+  }
+  
+  .right-column {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+  }
+  
+  .social-links {
+    margin-top: 10px; /* Отступ сверху для блока с соцсетями */
+    margin-left: -5px;
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+  }
+  
+  .social-item {
+    display: flex; /* Используем Flexbox для иконки и ссылки */
+    align-items: center; /* Центрируем по вертикали */
+    margin-left:10px ;
+  }
+  
+  .social-icon {
+    width: 7vw; /* Ширина иконки соцсети */
+    height: auto; /* Автоматическая высота */
+    margin-right: 13px; /* Отступ справа от иконки */
+  }
+  
+  
+  .right-column {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+    margin-left: 7vw; /* Сдвигаем колонку вправо на 20 пикселей */
+  }
+  
+  
+  .right-column iframe {
+    width: 100%; /* Занимаем всю ширину правой колонки */
+    height: 50%; /* Высота карты */
+  }
+  
+  .right-column h4{
+    color: #fff;
+    font-size: 4vw;
+  }
+  
+  .strelca {
+    margin-left: 24vw;
+    margin-top: 2vw;
+    width: 23%;
+    height: 23%;
+  }
+
+
+  }

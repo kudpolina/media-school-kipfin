@@ -1,0 +1,753 @@
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #E0E1E8;
+    justify-content: center;
+    align-items: center;
+    background-image: url('background.jpg'); /* Путь к фоновому изображению */
+    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+
+  }
+
+  .menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    margin-right: 25px;
+  }
+  
+  .menu-icon .bar {
+    width: 25px;
+    height: 3px;
+    background-color: #071757;
+    margin: 4px 0;
+    transition: 0.4s;
+  }
+
+  nav {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow: hidden;
+  }
+  .logo-box {
+    float: left;
+    margin-left: 25px;
+  }
+  .logo {
+    margin: 0px;
+    height: 70px;
+    text-align: left;
+  }
+  #nav-links{
+    margin: 0;
+    margin-right: 25px;
+    padding-left: 0;
+    list-style: none;
+    float: center;
+    height: 70px;
+    line-height: 70px;
+    text-align:center;
+    font-family: 'Angst', bold;
+  }
+  a {
+    text-decoration: none;
+    display: inline-block;
+    position: relative;
+  }
+  li a {
+    color: #071757;
+    text-transform: uppercase;
+  }
+  li {
+    display: inline-block;
+    margin-right: 117px;
+    transition: .5s linear;
+  }
+  li a:after {
+    content: "";
+    width: 0;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    background: #071757;
+    transition: all 0.5s linear;  
+  }
+  li a:hover:after{
+    width: 100%;
+  }
+  @media screen and (max-width:493px) {
+    nav {
+      overflow: visible
+    }
+
+    .menu-icon {
+      display: flex;
+      float: right;
+      margin-top: -10vw;
+    }
+
+    #nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      text-align: center;
+      height: auto;
+      margin: 25px 25px 0 25px;
+      line-height: 50px;
+    }
+
+    #nav-links.active {
+      display: flex;
+    }
+
+    li {
+      margin: 10px 0;
+    }
+    li:hover {
+      background: rgba(0,0,0,.1)
+    }
+    li a:after {
+      content: none;
+    }
+    }
+
+  h1 {
+    text-align: left;
+    margin-left: 82px;
+    margin-top: 25px;
+    font-family:'Angst', bold;
+    font-size: 90px;
+    color: #071757;
+  }
+  .container {
+    width: 80%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 15px;
+    padding: 35px;
+    background-color: #071653;
+    border-radius: 30px;
+    width: 1278px;
+    height: 400px;
+    overflow: auto;
+}
+
+h2 {
+    text-align: left;
+    margin-bottom: 20px;
+    font-size:40px ;
+    font-family:'Angst';
+    font-weight: lighter;
+    color: #fff;
+}
+
+.videos {
+    display: flex;
+    justify-content: space-around;
+}
+
+.video-item {
+    width: 27%;
+    margin-bottom: 20px;
+}
+
+.video-item iframe {
+    width: 355px;
+    height: 200px;
+    border-radius: 16px;
+}
+
+.video-title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 28px;
+    color: #fff;
+    margin: 10px;
+}
+
+.mini-title {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #fff;
+    font-weight: light;
+
+}
+
+h3 {
+    text-align: left;
+    margin-left: 121px;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    font-size: 40px ;
+    font-family:'Angst';
+    font-weight: lighter;
+    color: #071653;
+
+}
+
+
+.slider {
+    position: relative;
+    width: 80%;
+    max-width: 500px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-radius: 16px;
+    box-shadow: 0 0 20px 7px #040c2e;
+}
+
+.slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.slides img {
+    width: 100%;
+    height: auto;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: #071653;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.8s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.speakers-container {
+    width: 80%;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 70px;
+    padding: 35px;
+    background-color: #071653;
+    border-radius: 30px;
+    width: 1278px;
+    height: 541px;
+    margin-bottom: 50px;
+    overflow: auto;
+  }
+  
+  .speaker {
+    display: inline-block;
+    width: 30%;
+    margin-bottom: 20px;
+  }
+  
+  .speaker-photo {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 5px #040c2e;
+    object-fit: cover;
+    margin-left: 140px;
+  }
+  
+  .speaker-name {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 25px;
+    color: #fff;
+    margin: 10px;
+    margin-left: 130px;
+  }
+
+  .speaker-mini-text {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    color: #fff;
+    font-weight: light;
+    width: 300px;
+    margin-left: 100px;
+  }
+  
+  .speaker-button {
+    background-color: #D9D9D9;
+    color: #06144B;
+    padding: 8px 8px 5px 5px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 10px;
+    display: block;
+    text-align: center;
+    margin-left: 210px;
+    width: 80px;
+  }
+
+  .contact-info {
+    display: flex; /* Используем Flexbox для расположения колонок */
+    background-color: white; /* Белый фон */
+    padding: 20px; /* Отступы вокруг контейнера */
+    width: 95%; /* Занимаем 95% ширины */
+    margin: 0 auto; /* Центрируем контейнер по горизонтали */
+    background-image: url('contact.png'); /* Путь к фоновому изображению */
+    background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+  }
+  
+  .left-column h4 {
+    font-family: 'Angst', sans-serif;
+    color: #fff;
+    font-size: 35px;
+    margin-top: 20px; /* Убираем верхний отступ заголовка */
+    margin-left: 20px;
+    margin-bottom: 10px; /* Добавляем отступ снизу заголовка */
+  }
+  
+  .left-column p {
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    margin-top: 5px; /* Добавляем небольшой отступ сверху для текста */
+    margin-left: 20px;
+    margin-bottom: 20px; /* Добавляем небольшой отступ снизу для текста */
+  }
+
+  .left-column a{
+    color: #fff;
+    font-weight: lighter;
+  }
+  
+  .right-column {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+  }
+  
+  .social-links {
+    margin-top: 10px; /* Отступ сверху для блока с соцсетями */
+    margin-left: 10px;
+    display: flex;
+    justify-content: row;
+    flex-wrap: wrap;
+  }
+  
+  .social-item {
+    display: flex; /* Используем Flexbox для иконки и ссылки */
+    align-items: center; /* Центрируем по вертикали */
+    margin-left:10px ;
+  }
+  
+  .social-icon {
+    width: 80px; /* Ширина иконки соцсети */
+    height: auto; /* Автоматическая высота */
+    margin-right: 13px; /* Отступ справа от иконки */
+  }
+  
+  
+  .right-column {
+    flex: 1; /* Занимает 1 часть доступного пространства */
+    margin-left: 400px; /* Сдвигаем колонку вправо на 20 пикселей */
+  }
+  
+  
+  .right-column iframe {
+    width: 90%; /* Занимаем всю ширину правой колонки */
+    height: 250px; /* Высота карты */
+  }
+
+  .right-column h4{
+    color: #fff;
+    font-size: 25px;
+  }
+
+
+  .strelca {
+    margin-left: 4.5px;
+  }
+
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+    @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+    }
+
+    @media screen and (max-width: 1025px){
+      nav {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 20px 0;
+        overflow: hidden;
+      }
+      .logo-box {
+        float: left;
+        margin-left: 25px;
+      }
+      .logo {
+        margin: 0px;
+        height: 70px;
+        text-align: left;
+      }
+      ul {
+        margin: 0;
+        margin-right: 25px;
+        padding-left: 0;
+        list-style: none;
+        float: center;
+        height: 70px;
+        line-height: 70px;
+        text-align:center;
+        font-family: 'Angst', bold;
+      }
+      a {
+        text-decoration: none;
+        display: inline-block;
+        position: relative;
+      }
+      li a {
+        color: #071757;
+        text-transform: uppercase;
+      }
+      li {
+        display: inline-block;
+        margin-right: 117px;
+        transition: .5s linear;
+      }
+      li a:after {
+        content: "";
+        width: 0;
+        height: 2px;
+        position: absolute;
+        left: 0;
+        bottom: 20px;
+        background: #071757;
+        transition: all 0.5s linear;  
+      }
+      li a:hover:after{
+        width: 100%;
+      }
+    
+    
+      @media screen and (max-width:574px) {
+        .logo-box {
+          float: none;
+          margin: 0 auto;
+        }
+        ul {
+          float: none;
+          margin: 0 25px;
+          }
+       li:first-of-type {margin-left:0}
+      }
+      
+      @media screen and (max-width:493px) {
+      nav {
+        overflow: visible
+      }
+      ul {
+        height: auto;
+        margin: 25px 25px 0 25px;
+        line-height: 50px;
+      }
+      li {
+        display: block;
+        margin: 0;
+      }
+      li:hover {
+        background: rgba(0,0,0,.1)
+      }
+      li a:after {
+        content: none;
+      }
+      }
+    
+      h1 {
+        text-align: left;
+        margin-left: 32px;
+        margin-top: 25px;
+        font-family:'Angst', bold;
+        font-size: 10vw;
+        color: #071757;
+      }
+      .container {
+        width: 80%;
+        margin-left: 6%;
+        margin-top: 15px;
+        padding: 35px;
+        background-color: #071653;
+        border-radius: 30px;
+        height: 130vh;
+    }
+    
+    h2 {
+        text-align: left;
+        margin-bottom: 20px;
+        margin-left: -2vw;
+        font-size: 7vw ;
+        font-family:'Angst';
+        font-weight: lighter;
+        color: #fff;
+    }
+    
+    .videos {
+      display: flex;
+      flex-direction: column; /* Располагаем элементы в колонку */
+      justify-content: space-around; /* Равномерно распределяем элементы по вертикали */
+      align-items: center;
+  }
+    .video-item {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+    
+    .video-item iframe {
+        width: 70vw;
+        height: 40vw;
+        border-radius: 16px;
+        margin-left: -2.5vw;
+    }
+    
+    .video-title {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 7vw;
+        color: #fff;
+        margin: 10px;
+    }
+    
+    .mini-title {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 5vw;
+        color: #fff;
+        font-weight: light;
+    
+    }
+    
+    h3 {
+        text-align: left;
+        margin-left: 5vw;
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-size: 7vw;
+        font-family:'Angst';
+        font-weight: lighter;
+        color: #071653;
+    
+    }
+    
+    
+    .slider {
+        position: relative;
+        width: 80%;
+        max-width: 500px;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 0 20px 7px #040c2e;
+        margin: 0 auto;
+    }
+    
+    .slides {
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+    }
+    
+    .slides img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        padding: 16px;
+        margin-top: -22px;
+        color: #071653;
+        font-weight: bold;
+        font-size: 18px;
+        transition: 0.8s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+    }
+    
+    .next {
+        right: 0;
+        border-radius: 3px 0 0 3px;
+    }
+    
+    .prev:hover, .next:hover {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    .speakers-container {
+      width: 80%;
+      margin-left: 6%;
+      margin-top: 40px;
+      padding: 35px;
+      background-color: #071653;
+      border-radius: 30px;
+      height: 200vw;
+      margin-bottom: 50px;
+      }
+      
+      .speaker {
+        display: flex;
+        flex-direction: column; /* Располагаем элементы в колонку */
+        justify-content: space-around; /* Равномерно распределяем элементы по вертикали */
+        align-items: center;
+        width: 70%;
+        margin-bottom:40px;
+      }
+      
+      .speaker-photo {
+        width: 30vw;
+        height: 30vw;
+        border-radius: 50%;
+        box-shadow: 0 0 10px 5px #040c2e;
+        object-fit: cover;
+        margin-left: 22vw;
+      }
+      
+      .speaker-name {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 5.5vw;
+        color: #fff;
+        margin: 10px;
+        margin-left:25vw;
+        max-width: 80%;
+      }
+    
+      .speaker-mini-text {
+        text-align: center;
+        font-family: 'Montserrat';
+        font-size: 4vw;
+        color: #fff;
+        font-weight: light;
+        width: 120%;
+        margin-left:40%;
+      }
+      
+      .speaker-button {
+        background-color: #D9D9D9;
+        color: #06144B;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 10px;
+        display: block;
+        text-align: center;
+        margin-left: 23vw;
+      }
+    
+      .contact-info {
+        display: flex; /* Используем Flexbox для расположения колонок */
+        background-color: white; /* Белый фон */
+        padding: 20px; /* Отступы вокруг контейнера */
+        width: 95%; /* Занимаем 95% ширины */
+        margin: 0 auto; /* Центрируем контейнер по горизонтали */
+        background-image: url('contact.png'); /* Путь к фоновому изображению */
+        background-size: cover; /* Масштабирует изображение, чтобы оно покрывало весь элемент */
+        background-position: center; /* Центрирует изображение */
+        background-repeat: no-repeat; /* Не повторяет изображение */
+      }
+      
+      .left-column h4 {
+        font-family: 'Angst', sans-serif;
+        color: #fff;
+        font-size: 4vw;
+        margin-top: 1vw; /* Убираем верхний отступ заголовка */
+        margin-left: 1vw;
+        margin-bottom: 10px; /* Добавляем отступ снизу заголовка */
+      }
+      
+      .left-column p {
+        color: #fff;
+        font-size: 3.5vw;
+        text-align: left;
+        font-weight: bold;
+        margin-top: 5px; /* Добавляем небольшой отступ сверху для текста */
+        margin-left: 6px;
+        margin-bottom: 20px; /* Добавляем небольшой отступ снизу для текста */
+      }
+      
+  
+      
+      .left-column a{
+        color: #fff;
+        font-weight: lighter;
+      }
+      
+      .right-column {
+        flex: 1; /* Занимает 1 часть доступного пространства */
+      }
+      
+      .social-links {
+        margin-top: 10px; /* Отступ сверху для блока с соцсетями */
+        margin-left: -5px;
+        display: flex;
+        justify-content: row;
+        flex-wrap: wrap;
+      }
+      
+      .social-item {
+        display: flex; /* Используем Flexbox для иконки и ссылки */
+        align-items: center; /* Центрируем по вертикали */
+        margin-left:10px ;
+      }
+      
+      .social-icon {
+        width: 7vw; /* Ширина иконки соцсети */
+        height: auto; /* Автоматическая высота */
+        margin-right: 13px; /* Отступ справа от иконки */
+      }
+      
+      
+      .right-column {
+        flex: 1; /* Занимает 1 часть доступного пространства */
+        margin-left: 7vw; /* Сдвигаем колонку вправо на 20 пикселей */
+      }
+      
+      
+      .right-column iframe {
+        width: 100%; /* Занимаем всю ширину правой колонки */
+        height: 50%; /* Высота карты */
+      }
+      
+      .right-column h4{
+        color: #fff;
+        font-size: 4vw;
+      }
+      
+      .strelca {
+        margin-left: 24vw;
+        margin-top: 2vw;
+        width: 23%;
+        height: 23%;
+      }
+
+    }
